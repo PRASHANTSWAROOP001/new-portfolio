@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ThemeProvider } from './components/ui/theme-provider';
 import './App.css';
 import ErrorPage from './pages/ErrorPage';
 import Education from './pages/Education';
@@ -28,7 +29,12 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return(
+  <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+   <RouterProvider router={router} />
+  </ThemeProvider>
+)
+
 }
 
 export default App;
