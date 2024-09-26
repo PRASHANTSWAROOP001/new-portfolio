@@ -2,44 +2,52 @@
     {
         "id":1,
         "name":"Javascript",
-        "path":"javascript.svg"
+        "path":"javascript.svg",
+        "color": "bg-yellow-200"
     },
     {
         "id":2,
         "name":"React",
-        "path":"react.svg"
+        "path":"react.svg",
+        "color":"bg-green-200"
+    
     },
     {
       
         "id":3,
         "name":"Redux",
-        "path":"redux.svg"
+        "path":"redux.svg",
+        "color":"bg-gray-200"
         
     },
     {
         "id":4,
         "name":"Node Js",
-        "path":"nodejs.svg"
+        "path":"nodelogo.svg",
+        "color":"bg-blue-200"
        
         
     },
     {
         "id":5,
         "name":"Mongo DB",
-        "path":"mongodb.svg"
+        "path":"mogodb.svg",
+        "color":"bg-indigo-300"
     },
 
     {
         "id":6,
         "name":"Python",
-        "path":"python.svg"
+        "path":"python.svg",
+        "color":"bg-green-200"
         
     },
     
     {
         "id":7,
         "name":"C++",
-        "path":"c++.svg"
+        "path":"c++.svg",
+        "color":"bg-gray-200"
         
     }
     

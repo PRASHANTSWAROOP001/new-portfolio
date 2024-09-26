@@ -44,28 +44,60 @@ function Home() {
       </section>
 
       <section className='w-full py-4 lg:py-8'>
-        <Carousel plugins={[
-          Autoplay({
-            delay: 2000,
-          }),
-        ]} className='w-full py-10'>
-          <CarouselContent className='flex gap-5 sm:gap-20 items-center' >
+        <Carousel
+          plugins={[
+            Autoplay({
+              delay: 2000,
+            }),
+          ]}
+          className='w-full py-10'
+        >
+          {/* Flexbox settings for centering on mobile and starting from the left on large screens */}
+          <CarouselContent className='flex px-4  gap-10 sm:gap-20 items-center  '>
             {TechData.map(({ name, id, path }) => {
               return (
-                <CarouselItem key={id} className=' md:basis-1/2 lg:basis-1/4 '>
-                  <div key={id} class=" flex h-40 w-60 items-center justify-start rounded-xl border-2 bg-violet-300">
-                    <div class="px-4">
-                      <img src={path} alt={name} class="w-16" />
-                      <h1 class="fond-semibold py-2 text-lg yellow">{name}</h1>
+                <CarouselItem
+                  key={id}
+                  className='basis-1/2 md:basis-1/2 lg:basis-1/4 flex items-center'
+                >
+                  <div
+                    key={id}
+                    className={`flex h-40 w-60 items-center justify-start rounded-xl border-2 dark:bg-[#272727]`}
+                  >
+                    <div className='px-4'>
+                      <img src={path} alt={name} className='w-16' />
+                      <h1 className='fond-semibold py-2 text-lg'>{name}</h1>
                     </div>
                   </div>
                 </CarouselItem>
-              )
+              );
             })}
           </CarouselContent>
-
         </Carousel>
       </section>
+
+
+      <section className='w-full text-center font-Raelway'>
+
+        <h1 className='text-4xl py-4 md:text-6xl md:py-8 text-[#9f75ff]'> Javascript</h1>
+
+        <h1 className='text-4xl py-4 md:text-6xl md:py-8 text-[#843dff]'> React </h1>
+
+        <h1 className='text-4xl py-4 md:text-6xl md:py-8 text-[#6b04fd]'>
+          Coffe
+        </h1>
+
+      </section>
+
+      <section className='w-full '>
+        
+        <div className='px-10'>
+          <h1 className='text-4xl'>These Are The Technology. <br />
+           That I have Been Using</h1>
+        </div>
+
+      </section>
+
 
 
     </div>

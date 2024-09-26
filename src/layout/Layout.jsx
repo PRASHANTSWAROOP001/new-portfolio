@@ -58,7 +58,7 @@ function Layout() {
           <div className=" w-[30%] flex justify-center gap-4 lg:gap-6 items-center">
             <a href="https://github.com/PRASHANTSWAROOP001" target="_blank">
               {' '}
-              <FaGithub className=" h-3 w-3 md:h-6 md:w-6" />
+              <FaGithub className=" h-6 w-6" />
             </a>
 
             <a
@@ -66,11 +66,11 @@ function Layout() {
               target="_blank"
             >
               {' '}
-              <CiLinkedin className="h-3 w-3 md:h-6 md:w-6" />{' '}
+              <CiLinkedin className="h-7 w-7" />{' '}
             </a>
 
             <span>
-              {lightMode ? <Moon className='h-3 w-3 md:h-6 md:w-6' onClick={handleMode} /> : <Sun className='h-8 w-8' onClick={handleMode}/> }
+              {lightMode ? <Moon className='h-6 w-6' onClick={handleMode} /> : <Sun className='h-7 w-7' onClick={handleMode}/> }
             </span>
           </div>
         </div>
@@ -88,7 +88,7 @@ function Layout() {
           <div className=" w-[30%] flex justify-end gap-4 lg:gap-6 items-center  text-[#B292FF] ">
             <a href="https://github.com/PRASHANTSWAROOP001" target="_blank">
               {' '}
-              <FaGithub className=" h-3 w-3 md:h-6 md:w-6" />
+              <FaGithub className=" h-6 w-6" />
             </a>
 
             <a
@@ -96,7 +96,7 @@ function Layout() {
               target="_blank"
             >
               {' '}
-              <CiLinkedin className="h-3 w-3 md:h-6 md:w-6" />{' '}
+              <CiLinkedin className="h-7 w-7" />{' '}
             </a>
 
             <a
@@ -104,7 +104,7 @@ function Layout() {
               target="_blank"
             >
               {' '}
-              <MdEmail className="h-3 w-3 md:h-6 md:w-6" />{' '}
+              <MdEmail className="h-7 w-7" />{' '}
             </a>
           </div>
         </div>
