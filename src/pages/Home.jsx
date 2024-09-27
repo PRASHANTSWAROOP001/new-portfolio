@@ -26,20 +26,28 @@ function Home() {
 
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-10 lg:gap-y-0 justify-items-center">
         {/* Text Card */}
-        <Card className="w-[90%] lg:w-[70%] mx-auto lg:mx-0 border-none font-Raleway">
+        <Card className="w-[90%] lg:w-[90%] mx-auto lg:mx-0 border-none font-Raleway tracking-wider">
           <CardHeader>
             <CardTitle>Hello, I Am Prashant Swaroop</CardTitle>
           </CardHeader>
           <CardContent>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis ad exercitationem blanditiis eius voluptatibus? Eaque consequuntur neque autem eveniet voluptate nostrum architecto amet quam dolor voluptatem sed quibusdam.
-          </CardContent>
+  Hey there! I'm a full-stack dev in the making, currently diving into the MERN stack and building cool projects to level up. 
+  
+  After a year of front-end work, where I got to define features and build apps, I realized how much I love coding—especially that magical moment when everything works and all the checks turn green!
+  <br />
+  <br />
+  I'd love the chance to work on real-world projects and take my skills to the next level. 
+  
+  Oh, and coffee? It's my co-pilot. ☕ Let's build something awesome!
+</CardContent>
+
           <CardFooter className="flex justify-between">
             <Button className="rounded-full">Download Resume</Button>
             <Link to="/project"><Button className="rounded-full" variant="outline">Projects</Button></Link>
           </CardFooter>
         </Card>
 
-        <img src="photo.svg" alt="profile photo" className="object-cover w-[90%] lg:w-[30%] h-auto " />
+        <img src="photo.svg" alt="profile photo" className="object-cover w-[90%] lg:w-[50%] h-auto " />
 
       </section>
 
