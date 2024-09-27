@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -35,7 +35,7 @@ function Home() {
           </CardContent>
           <CardFooter className="flex justify-between">
             <Button className="rounded-full">Download Resume</Button>
-            <Button className="rounded-full" variant="outline">Projects</Button>
+            <Link to="/project"><Button className="rounded-full" variant="outline">Projects</Button></Link>
           </CardFooter>
         </Card>
 
@@ -89,14 +89,115 @@ function Home() {
 
       </section>
 
-      <section className='w-full '>
-        
-        <div className='px-10'>
-          <h1 className='text-4xl'>These Are The Technology. <br />
-           That I have Been Using</h1>
-        </div>
+      <div className='py-4 md:py-8'>
+        <h1 className='text-2xl md:text-4xl md:px-12 md:text-left text-center py-2 dark:text-gray-400'>These Are The Technologies  </h1>
+        <h1 className=' text-2xl md:text-4xl md:px-12 md:text-left text-center py-2 dark:text-gray-400'> that i have been using.</h1>
+      </div>
 
-      </section>
+      <section className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-4 py-4 md:pt-12 md:pb-20'>
+  <Card className='w-[90%] md:w-[80%] duration-500 hover:scale-105 border-2 dark:border-[#B292FF]'>
+    <CardHeader>
+      <CardTitle className='text-xl text-center'> Front-End Engineering </CardTitle>
+    </CardHeader>
+    <CardContent className='flex flex-col justify-center items-center gap-2'>
+      <div className='flex items-center justify-center gap-4'>
+        <img src="react.svg" alt="react logo" className='w-10 h-10' />
+        <h1>React</h1>
+      </div>
+
+      <div className='flex items-center justify-center gap-4'>
+        <img src="redux.svg" alt="redux logo" className='w-10 h-10' />
+        <h1>Redux</h1>
+      </div>
+
+      
+      <div className='flex items-center justify-center gap-4'>
+        <img src="vite.svg" alt="vite logo" className='w-8 h-8' />
+        <h1>Vite</h1>
+      </div>
+
+      <div className='flex items-center justify-center gap-4'>
+        <img src="tailwind css.svg" alt="Tailwind css logo" className='w-8 h-8' />
+        <h1>Tailwind</h1>
+      </div>
+
+
+
+    </CardContent>
+  </Card>
+
+  <Card className='w-[90%] md:w-[80%] duration-500 hover:scale-105 border-2 dark:border-[#B292FF]'>
+    <CardHeader>
+      <CardTitle className='text-xl text-center'> Languages </CardTitle>
+    </CardHeader>
+    <CardContent className='flex flex-col justify-center items-center gap-2'>
+
+      <div className='flex items-center justify-center gap-4'>
+        <img src="javascript.svg" alt="react logo" className='w-10 h-10' />
+        <h1>Javascript</h1>
+      </div>
+
+      <div className='flex items-center justify-center gap-4'>
+        <img src="python.svg" alt="python" className='w-10 h-10' />
+        <h1>Python</h1>
+      </div>
+
+      <div className='flex items-center justify-center gap-4'>
+        <img src="c++.svg" alt="c++" className='w-10 h-10' />
+        <h1>C++</h1>
+      </div>
+
+    </CardContent>
+  </Card>
+
+  <Card className='w-[90%] md:w-[80%] duration-500 hover:scale-105 border-2 dark:border-[#B292FF]'>
+    <CardHeader>
+      <CardTitle className='text-xl text-center'> Back-End Technology </CardTitle>
+    </CardHeader>
+    <CardContent className='flex flex-col gap-2'>
+      <div className='flex items-center justify-center gap-4'>
+        <img src="nodelogo.svg" alt="node js logo" className='w-10 h-10' />
+        <h1>Node Js</h1>
+      </div>
+
+      <div className='flex items-center justify-center gap-4'>
+        <img src="express.png" alt="express logo" className='w-10 h-10' />
+        <h1>Express Js</h1>
+      </div>
+
+
+
+      <div className='flex items-center justify-center gap-4'>
+        <img src="mogodb.svg" alt="mongoDB logo" className='w-10 h-10' />
+        <h1>MongoDb</h1>
+      </div>
+
+      <div className='flex items-center justify-center gap-4'>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt='supabase logo' className='w-10 h-10' />
+        <h1>Supabase</h1>
+      </div>
+
+    </CardContent>
+  </Card>
+
+  <Card className='w-[90%] md:w-[80%] duration-500 hover:scale-105 border-2 dark:border-[#B292FF] '>
+    <CardHeader>
+      <CardTitle className='text-center text-xl '> DevOps </CardTitle>
+    </CardHeader>
+    <CardContent className='flex flex-col gap-2'>
+      <div className='flex items-center justify-center gap-4'>
+        <img src="Git.svg" alt="Git Logo" className='w-10 h-10' />
+        <h1>Git</h1>
+      </div>
+
+      <div className='flex items-center justify-center gap-4'>
+        <img src="GitHub Actions.svg" alt="redux logo" className='w-10 h-10' />
+        <h1>Github Actions</h1>
+      </div>
+    </CardContent>
+  </Card>
+</section>
+
 
 
 
