@@ -48,8 +48,8 @@ function Layout() {
 
   return (
     <div className=" min-h-screen w-full">
-      <nav className="w-full flex justify-center mt-4 font-Raleway tracking-wide text-[#B292FF] ">
-        <div className="sm:w-[60%] md:w-[60%] lg:w-[40%] w-[95%] rounded-full dark:bg-[#272727] h-12 flex items-center justify-center ">
+      <nav className="w-full flex justify-center mt-4 font-Raleway tracking-wide dark:text-[#B292FF] ">
+        <div className="sm:w-[60%] md:w-[60%] lg:w-[40%] w-[95%] rounded-full  border-2 border-gray-400  dark:bg-[#272727] h-12 flex items-center justify-center ">
           <div className="w-[60%] flex items-center justify-around text-sm sm:text-lg">
             <Link to="/">prashant</Link>
             <Link to="/education">education</Link>
@@ -81,11 +81,11 @@ function Layout() {
       </main>
 
       <footer className=" w-full flex justify-center mb-2 ">
-        <div className="w-[95%] sm:w-[80%] rounded-full  dark:bg-[#272727] h-12 flex items-center justify-center ">
-          <div className="w-[60%] text-gray-400 ">
+        <div className="w-[95%] sm:w-[80%] rounded-full   border-2 border-gray-400 dark:bg-[#272727] h-12 flex items-center justify-center ">
+          <div className="w-[60%]  dark:text-gray-400 ">
             <h1 className='text-sm sm:text-lg'>Follow me/ Drop A Message ❤️</h1>
           </div>
-          <div className=" w-[30%] flex justify-end gap-4 lg:gap-6 items-center  text-[#B292FF] ">
+          <div className=" w-[30%] flex justify-end gap-4 lg:gap-6 items-center  dark:text-[#B292FF] ">
             <a href="https://github.com/PRASHANTSWAROOP001" target="_blank">
               {' '}
               <FaGithub className=" h-6 w-6" />

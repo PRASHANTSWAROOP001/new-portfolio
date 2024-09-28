@@ -61,7 +61,7 @@ export default function CombinedProjectPage() {
     <div className="min-h-screen bg-background text-foreground p-8">
       <section className='w-full py-10'>
         <div>
-          <h1 className='text-center text-3xl text-gray-400'>Here, You Can Know A Little Bit More About Myself.<br />
+          <h1 className='text-center text-3xl dark:text-gray-400'>Here, You Can Know A Little Bit More About Myself.<br />
             As A Developer. See My Experience.</h1>
         </div>
 
@@ -77,7 +77,7 @@ export default function CombinedProjectPage() {
         {projectsData.map((project, index) => (
           <Card
             key={index}
-            className={`w-full max-w-sm bg-card transition-all duration-500 ease-in-out ${
+            className={`w-full max-w-sm bg-card transition-all duration-500 ease-in-out   dark:border-[#B292FF] ${
               index < visibleProjects
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-full'

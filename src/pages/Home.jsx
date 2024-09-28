@@ -26,7 +26,7 @@ function Home() {
 
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 lg:gap-x-10 lg:gap-y-0 justify-items-center">
         {/* Text Card */}
-        <Card className="w-[90%] lg:w-[90%] mx-auto lg:mx-0 border-none font-Raleway tracking-wider">
+        <Card className="w-[90%] lg:w-[90%] mx-auto lg:mx-0 border-none font-Raleway  shadow-none  tracking-wider">
           <CardHeader>
             <CardTitle>Hello, I Am Prashant Swaroop</CardTitle>
           </CardHeader>
