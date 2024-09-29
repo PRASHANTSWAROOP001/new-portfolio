@@ -1,4 +1,4 @@
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from './components/ui/theme-provider';
 import './App.css';
 import ErrorPage from './pages/ErrorPage';
@@ -8,8 +8,7 @@ import Project from './pages/Project';
 import Layout from './layout/Layout';
 
 function App() {
-  // Replace createBrowserRouter with createHashRouter
-  const router = createHashRouter([
+  const router = createBrowserRouter([
     {
       path: '/',
       element: <Layout />,
@@ -31,11 +30,12 @@ function App() {
     },
   ]);
 
-  return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <RouterProvider router={router} />
-    </ThemeProvider>
-  );
+  return(
+  <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+   <RouterProvider router={router} />
+  </ThemeProvider>
+)
+
 }
 
 export default App;
