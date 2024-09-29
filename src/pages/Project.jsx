@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { GithubIcon, ExternalLinkIcon } from 'lucide-react'
+import { RiGithubLine } from "react-icons/ri";
 
 
 
@@ -24,28 +25,10 @@ export default function CombinedProjectPage() {
       liveLink: "https://prashantswaroop001.github.io/FOOD-RECIPE-APP/"
     },
     {
-      title: "Project 3",
-      description: "An e-commerce platform developed using React, Node.js, and Stripe for payments.",
-      githubLink: "https://github.com/yourusername/project3",
-      liveLink: "https://project3.yourdomain.com"
-    },
-    {
-      title: "Project 4",
-      description: "A mobile-first web application for task management, built with React Native and Firebase.",
-      githubLink: "https://github.com/yourusername/project4",
-      liveLink: "https://project4.yourdomain.com"
-    },
-    {
-      title: "Project 5",
-      description: "An AI-powered chatbot using Python and natural language processing techniques.",
-      githubLink: "https://github.com/yourusername/project5",
-      liveLink: "https://project5.yourdomain.com"
-    },
-    {
-      title: "Project 6",
-      description: "A data visualization dashboard created with D3.js and Vue.js.",
-      githubLink: "https://github.com/yourusername/project6",
-      liveLink: "https://project6.yourdomain.com"
+      title: "Shopping Cart",
+      description: "A Basic Program To Understand Context Api And State Management In React Js ",
+      githubLink: "https://github.com/PRASHANTSWAROOP001/Shoping-Cart?tab=readme-ov-file",
+      liveLink: "https://prashantswaroop001.github.io/Shoping-Cart/"
     }
   ]
 
@@ -92,7 +75,7 @@ export default function CombinedProjectPage() {
             <CardFooter className="flex justify-center space-x-4">
               <Button variant="outline" size="sm" asChild>
                 <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                  <GithubIcon className="mr-2 h-4 w-4" />
+                  < RiGithubLine className="mr-2 h-4 w-4" />
                   GitHub
                 </a>
               </Button>

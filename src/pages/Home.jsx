@@ -103,36 +103,33 @@ function Home() {
       </div>
 
       <section className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-4 py-4 md:pt-12 md:pb-20'>
-        <Card className='w-[90%] md:w-[80%] duration-500 hover:scale-105 border-2 dark:border-[#B292FF]'>
-          <CardHeader>
-            <CardTitle className='text-xl text-center'> Front-End Engineering </CardTitle>
-          </CardHeader>
-          <CardContent className='flex flex-col justify-center items-center gap-2'>
-            <div className='flex items-center justify-center gap-4'>
-              <img src="react.svg" alt="react logo" className='w-10 h-10' />
-              <h1>React</h1>
-            </div>
+      <Card className="w-[90%] md:w-[80%] duration-500 hover:scale-105 border-2 dark:border-[#B292FF]">
+  <CardHeader>
+    <CardTitle className="text-xl text-center">Front-End Engineering</CardTitle>
+  </CardHeader>
+  <CardContent className="flex flex-col justify-center items-center gap-2">
+    <div className="flex items-center justify-center gap-4">
+      <img src="react.svg" alt="react logo" className="w-10 h-10 flex-shrink-0" />
+      <div className="text-left min-w-[100px]">React</div>
+    </div>
 
-            <div className='flex items-center justify-center gap-4'>
-              <img src="redux.svg" alt="redux logo" className='w-10 h-10' />
-              <h1>Redux</h1>
-            </div>
+    <div className="flex items-center justify-center gap-4">
+      <img src="redux.svg" alt="redux logo" className="w-10 h-10 flex-shrink-0" />
+      <div className="text-left min-w-[100px]">Redux</div>
+    </div>
 
+    <div className="flex items-center justify-center gap-4">
+      <img src="vite.svg" alt="vite logo" className="w-8 h-8 flex-shrink-0" />
+      <div className="text-left min-w-[100px]">Vite</div>
+    </div>
 
-            <div className='flex items-center justify-center gap-4'>
-              <img src="vite.svg" alt="vite logo" className='w-8 h-8' />
-              <h1>Vite</h1>
-            </div>
+    <div className="flex items-center justify-center gap-4">
+      <img src="tailwind css.svg" alt="Tailwind css logo" className="w-8 h-8 flex-shrink-0" />
+      <div className="text-left min-w-[100px]">Tailwind</div>
+    </div>
+  </CardContent>
+</Card>
 
-            <div className='flex items-center justify-center gap-4'>
-              <img src="tailwind css.svg" alt="Tailwind css logo" className='w-8 h-8' />
-              <h1>Tailwind</h1>
-            </div>
-
-
-
-          </CardContent>
-        </Card>
 
         <Card className='w-[90%] md:w-[80%] duration-500 hover:scale-105 border-2 dark:border-[#B292FF]'>
           <CardHeader>
@@ -141,18 +138,18 @@ function Home() {
           <CardContent className='flex flex-col justify-center items-center gap-2'>
 
             <div className='flex items-center justify-center gap-4'>
-              <img src="javascript.svg" alt="react logo" className='w-10 h-10' />
-              <h1>Javascript</h1>
+              <img src="javascript.svg" alt="react logo" className="w-8 h-8 flex-shrink-0" />
+              <h1  className="text-left min-w-[100px]">Javascript</h1>
             </div>
 
             <div className='flex items-center justify-center gap-4'>
-              <img src="python.svg" alt="python" className='w-10 h-10' />
-              <h1>Python</h1>
+              <img src="python.svg" alt="python" className="w-8 h-8 flex-shrink-0" />
+              <h1  className="text-left min-w-[100px]">Python</h1>
             </div>
 
             <div className='flex items-center justify-center gap-4'>
-              <img src="c++.svg" alt="c++" className='w-10 h-10' />
-              <h1>C++</h1>
+              <img src="c++.svg" alt="c++"className="w-8 h-8 flex-shrink-0"/>
+              <h1  className="text-left min-w-[100px]">C++</h1>
             </div>
 
           </CardContent>
@@ -164,25 +161,25 @@ function Home() {
           </CardHeader>
           <CardContent className='flex flex-col gap-2'>
             <div className='flex items-center justify-center gap-4'>
-              <img src="nodelogo.svg" alt="node js logo" className='w-10 h-10' />
-              <h1>Node Js</h1>
+              <img src="nodelogo.svg" alt="node js logo" className="w-8 h-8 flex-shrink-0" />
+              <h1  className="text-left min-w-[100px]">Node Js</h1>
             </div>
 
             <div className='flex items-center justify-center gap-4'>
-              <img src="express.png" alt="express logo" className='w-10 h-10' />
-              <h1>Express Js</h1>
+              <img src="express.png" alt="express logo" className="w-8 h-8 flex-shrink-0" />
+              <h1  className="text-left min-w-[100px]">Express Js</h1>
             </div>
 
 
 
             <div className='flex items-center justify-center gap-4'>
-              <img src="mogodb.svg" alt="mongoDB logo" className='w-10 h-10' />
-              <h1>MongoDb</h1>
+              <img src="mogodb.svg" alt="mongoDB logo" className="w-8 h-8 flex-shrink-0" />
+              <h1  className="text-left min-w-[100px]">MongoDb</h1>
             </div>
 
             <div className='flex items-center justify-center gap-4'>
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" alt='supabase logo' className='w-10 h-10' />
-              <h1>Supabase</h1>
+              <h1  className="text-left min-w-[100px]">Supabase</h1>
             </div>
 
           </CardContent>
@@ -194,13 +191,13 @@ function Home() {
           </CardHeader>
           <CardContent className='flex flex-col gap-2'>
             <div className='flex items-center justify-center gap-4'>
-              <img src="Git.svg" alt="Git Logo" className='w-10 h-10' />
-              <h1>Git</h1>
+              <img src="Git.svg" alt="Git Logo" className="w-8 h-8 flex-shrink-0" />
+              <h1  className="text-left min-w-[100px]">Git</h1>
             </div>
 
             <div className='flex items-center justify-center gap-4'>
-              <img src="GitHub Actions.svg" alt="redux logo" className='w-10 h-10' />
-              <h1>Github Actions</h1>
+              <img src="GitHub Actions.svg" alt="redux logo" className="w-8 h-8 flex-shrink-0" />
+              <h1  className="text-left min-w-[100px]">Github Actions</h1>
             </div>
           </CardContent>
         </Card>
